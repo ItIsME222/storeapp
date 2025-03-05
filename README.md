@@ -46,7 +46,8 @@ Reason: There needs to be a way to manage users
 getUsers, postUsers,PutUsers,DeleteUsers
 
 an example URL would look like http://localhost:3000/products
-# Summary of Updates: 
+# Summary of Updates AS OF MILESTONE 4: 
+No updates or changes made.
 Rest API	Deleted unnecessary API’s
 Rest API	Added new API to fit the website
 
