@@ -11,6 +11,7 @@
 
 # 5. SiteMap:
 Each block on this sitemap represents a different page of the store. More will be added later, however as for now the main thing to look at will be the ability to browse the store. The store itself shows off all the different items, once the user clicks on an item they will be able to view the item. After that is the About us Page which will show a description of the store. Lastly there is the cart which will show another page on whether or not the customer wants to check out the item.
+
 ![image](https://github.com/user-attachments/assets/f5b70272-a83e-4a4a-9c1e-485e9dcc7c5a)
 
 # 6. WireFrame
