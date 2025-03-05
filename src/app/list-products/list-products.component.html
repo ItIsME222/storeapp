@@ -1,0 +1,38 @@
+<div class="list-group" *ngIf="selectedProduct == null">
+  <button class="list-group-item" active
+  *ngFor="let products of products"
+  (click)="onSelectedProduct(products)">
+  {{ products.Name }}
+  </button>
+  </div>
+
+  <div *ngIf="selectedProduct">
+    <h1>Selected Product</h1>
+    <div>
+      Name
+    </div>
+    <div>
+    {{selectedProduct.Name}}
+    </div>
+    <div>
+      Id
+    </div>
+    <div>
+      {{selectedProduct.Id}}
+    </div>
+    <div>
+      Category
+    </div>
+    <div>
+      {{selectedProduct.Category}}
+    </div>>
+    <div>
+      Price
+    </div>
+    <div>
+      {{selectedProduct.Price}}
+    </div>
+    <button (click)="deleteProduct(selectedProduct.Id!)" style="background-color: red; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+      Delete
+    </button>
+  </div>

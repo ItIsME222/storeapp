@@ -3,17 +3,36 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListProductsComponent } from './list-products/list-products.component';
+import { CreateProductsComponent } from './create-products/create-products.component';
+import { EditProductsComponent } from './edit-products/edit-products.component';
+import { DeleteProductsComponent } from './delete-products/delete-products.component';
+import { DisplayProductsComponent } from './display-products/display-products.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListProductsComponent,
+    CreateProductsComponent,
+    EditProductsComponent,
+    DeleteProductsComponent,
+    DisplayProductsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule,
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideHttpClient(withFetch()),
   ],
   bootstrap: [AppComponent]
 })

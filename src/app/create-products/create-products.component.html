@@ -1,0 +1,26 @@
+<div align="center" style="margin-left:50px;margin-right:50px" *ngIf="!wasSubmitted">
+  <p>Add a New Product</p>
+  <form [formGroup]="productInfo" (ngSubmit)="onSubmit()" >
+    <div class="form-group">
+    </div>
+    <div class="form-group">
+      <label for="name">Product Name</label>
+      <input id="name" type="text" class="form-control" aria-describedby="helpName" placeholder="Enter the name of the Product" formControlName="name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input id="price" type="number" class="form-control" aria-describedby="helpPrice" placeholder="Enter the price of the Product" formControlName="price" name="price">
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <input id="category" type="text" class="form-control" aria-describedby="helpCategory" placeholder="Enter the category of the Product" formControlName="category" name="category">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div *ngIf="wasSubmitted">
+  Product was added successfully.
+</div>
+
